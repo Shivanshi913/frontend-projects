@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="identity">
+          <h1 class="name">Shivanshi Tripathi</h1>
+          <p class="role">Java,Python Developer</p>
+          <p class="summary">
+            Passionate developer with experience building responsive, accessible web applications.
+            Strong focus on clean UI, performance, and maintainable code.
+          </p>
+        </div>
+        <ul class="contact">
+          <li><a href="mailto:you@example.com" aria-label="Email">shivanshi048.com</a></li>
+          <li><a href="tel:+1234567890" aria-label="Phone">+91 888766xxxx</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="experience" class="section">
+        <h2>Work Experience</h2>
+        <article class="item">
+          <div class="item-header">
+            <h3 class="item-title">Front-End Developer • Company ABC</h3>
+            <span class="item-meta">Jan 2025 – Present • Remote</span>
+          </div>
+          <ul class="item-points">
+            <li>Built responsive components with HTML, CSS, and JavaScript.</li>
+            <li>Improved performance, reducing LCP by 35% and bundle size by 25%.</li>
+            <li>Collaborated with designers to enhance accessibility (WCAG AA).</li>
+          </ul>
+        </article>
+        <article class="item">
+          <div class="item-header">
+            <h3 class="item-title">Web Developer • Startup XYZ</h3>
+            <span class="item-meta">Jun 2024 – Dec 2024 • LUCKNOW</span>
+          </div>
+          <ul class="item-points">
+            <li>Developed landing pages and dashboards with modern tooling.</li>
+            <li>Integrated REST APIs and client-side routing.</li>
+            <li>Set up CI to automate builds and checks.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <article class="item">
+          <div class="item-header">
+            <h3 class="item-title">Bachelors of Coomputer Application • MUIT</h3>
+            <span class="item-meta">2024– 2028</span>
+          </div>
+          <p class="item-desc">Relevant coursework: Data Structures, Web Development, Databases, Algorithms.</p>
+        </article>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><span>HTML5</span><span class="dot-sep"></span><span>CSS3</span><span class="dot-sep"></span><span>JavaScript</span></li>
+          <li><span>Responsive Design</span><span class="dot-sep"></span><span>Accessibility</span><span class="dot-sep"></span><span>Performance</span></li>
+          <li><span>Git</span><span class="dot-sep"></span><span>REST APIs</span><span class="dot-sep"></span><span>Testing</span></li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+          <div class="grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <p class="note">Prefer email? Write to <a href="mailto:you@example.com">you@example.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="copyright">© <span id="year"></span> Your Name</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+

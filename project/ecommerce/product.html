@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product • Minimal Sneakers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Minimal Sneakers product page with price, description and add to cart.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>ShopLite</span>
+            </div>
+            <nav class="header-actions">
+                <a class="cart" href="#" id="open-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container product-page">
+        <div class="product-gallery">
+            <img id="main-image" class="main-image" src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1600&auto=format&fit=crop" alt="Minimal Sneakers">
+            <div class="thumbs" id="thumbs">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=400&auto=format&fit=crop" alt="thumb 1" class="thumb active">
+                <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=400&auto=format&fit=crop" alt="thumb 2" class="thumb">
+                <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=400&auto=format&fit=crop" alt="thumb 3" class="thumb">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=400&auto=format&fit=crop" alt="thumb 4" class="thumb">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1 class="product-title" id="product-name">Minimal Sneakers</h1>
+            <p class="product-sku">SKU: SNK-001</p>
+            <div class="rating-row">
+                <div class="stars" aria-label="4.5 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="reviews-count">(128 reviews)</span>
+            </div>
+
+            <div class="price-row">
+                <span class="price" id="price" data-price="5999">₹5,999</span>
+                <span class="compare">₹7,499</span>
+                <span class="badge">20% OFF</span>
+            </div>
+
+            <p class="desc">Lightweight, breathable sneakers designed for everyday comfort. Built with a responsive sole and premium knit upper.</p>
+
+            <div class="selectors">
+                <div class="size-picker">
+                    <label>Size</label>
+                    <div class="size-options" id="size-options">
+                        <button class="size active" data-size="7">7</button>
+                        <button class="size" data-size="8">8</button>
+                        <button class="size" data-size="9">9</button>
+                        <button class="size" data-size="10">10</button>
+                    </div>
+                </div>
+                <div class="qty-picker">
+                    <label>Quantity</label>
+                    <div class="qty">
+                        <button class="qty-btn" id="qty-dec" aria-label="decrease quantity">-</button>
+                        <input id="qty-input" type="number" min="1" value="1" aria-label="quantity">
+                        <button class="qty-btn" id="qty-inc" aria-label="increase quantity">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-row">
+                <button id="add-to-cart" class="btn primary">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+                <button id="buy-now" class="btn ghost">Buy Now</button>
+            </div>
+
+            <ul class="highlights">
+                <li><i class="fa-regular fa-circle-check"></i> Free shipping over ₹999</li>
+                <li><i class="fa-regular fa-circle-check"></i> 7-day return policy</li>
+                <li><i class="fa-regular fa-circle-check"></i> 1-year warranty</li>
+            </ul>
+
+            <div class="details">
+                <h3>Product Details</h3>
+                <ul>
+                    <li>Upper: Breathable knit fabric</li>
+                    <li>Sole: EVA responsive cushioning</li>
+                    <li>Weight: 280g (size 9)</li>
+                    <li>Care: Hand wash, air dry</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="icon-btn" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">₹0</strong>
+            </div>
+            <button class="btn primary full" id="checkout">Checkout</button>
+        </div>
+    </aside>
+
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 ShopLite</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Optional: fake checkout click
+      document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('checkout').addEventListener('click', function(){
+          alert('Checkout is a demo. Backend lives in \'backend_python\'.');
+        });
+      });
+    </script>
+    
+</body>
+</html>
+
+

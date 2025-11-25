@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-utensils"></i> My Favorite Recipes</h1>
+            <p>Discover and share delicious recipes</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <button class="nav-btn active" data-section="recipes">All Recipes</button>
+            <button class="nav-btn" data-section="add-recipe">Add Recipe</button>
+            <button class="nav-btn" data-section="favorites">Favorites</button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero-small">
+                <div class="hero-small-inner">
+                    <div>
+                        <h2>Cook. Share. Enjoy.</h2>
+                        <p>Browse handpicked recipes or add your own favorites.</p>
+                    </div>
+                    <div class="controls-bar">
+                        <input id="search" type="search" placeholder="Search recipes...">
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="dessert">Dessert</option>
+                            <option value="snack">Snack</option>
+                            <option value="beverage">Beverage</option>
+                        </select>
+                        <select id="sort-select">
+                            <option value="latest">Latest</option>
+                            <option value="rating">Top Rated</option>
+                            <option value="time">Quickest (Prep+Cook)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <!-- Recipes Display Section -->
+            <section id="recipes-section" class="section active">
+                <div class="recipes-grid" id="recipes-grid">
+                    <!-- Recipes will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <!-- Add Recipe Section -->
+            <section id="add-recipe-section" class="section">
+                <div class="add-recipe-form">
+                    <h2>Add New Recipe</h2>
+                    <form id="recipe-form">
+                        <div class="form-group">
+                            <label for="recipe-name">Recipe Name</label>
+                            <input type="text" id="recipe-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-image">Image URL (optional)</label>
+                            <input type="url" id="recipe-image" placeholder="https://example.com/image.jpg">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-description">Description</label>
+                            <textarea id="recipe-description" rows="3" placeholder="Brief description of the recipe..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-ingredients">Ingredients</label>
+                            <textarea id="recipe-ingredients" rows="6" required placeholder="Enter ingredients, one per line..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-instructions">Instructions</label>
+                            <textarea id="recipe-instructions" rows="8" required placeholder="Enter step-by-step instructions..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-category">Category</label>
+                            <select id="recipe-category">
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="dessert">Dessert</option>
+                                <option value="snack">Snack</option>
+                                <option value="beverage">Beverage</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-prep-time">Prep Time (minutes)</label>
+                            <input type="number" id="recipe-prep-time" min="0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipe-cook-time">Cook Time (minutes)</label>
+                            <input type="number" id="recipe-cook-time" min="0">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Add Recipe</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Favorites Section -->
+            <section id="favorites-section" class="section">
+                <h2>My Favorite Recipes</h2>
+                <div class="recipes-grid" id="favorites-grid">
+                    <!-- Favorite recipes will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content">
+                <!-- Recipe details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Favorite Recipes. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

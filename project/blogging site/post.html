@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post • Tech Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="post">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="blog.html" class="logo">TechBlog</a>
+            <nav class="nav">
+                <a href="blog.html" class="nav-link">Home</a>
+                <a href="new.html" class="nav-link">Write</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article">
+            <h1 id="postTitle">Loading...</h1>
+            <div class="meta" id="postMeta"></div>
+            <div class="tags" id="postTags"></div>
+            <div id="postContent" style="white-space: pre-wrap; line-height: 1.6;"></div>
+        </article>
+
+        <section class="comments">
+            <h2>Comments</h2>
+            <div id="commentsList"></div>
+            <form id="commentForm" class="form" style="margin-top: 1rem;">
+                <div class="field">
+                    <label for="commentAuthor">Name</label>
+                    <input id="commentAuthor" name="author" type="text" required placeholder="Your name">
+                </div>
+                <div class="field">
+                    <label for="commentText">Comment</label>
+                    <textarea id="commentText" name="text" rows="4" required placeholder="Write a comment..."></textarea>
+                </div>
+                <div class="actions">
+                    <button class="btn" type="submit">Add comment</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> TechBlog</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

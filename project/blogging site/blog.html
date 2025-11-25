@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="blog.html" class="logo">TechBlog</a>
+            <nav class="nav">
+                <a href="blog.html" class="nav-link active">Home</a>
+                <a href="new.html" class="nav-link">Write</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <input id="search" type="search" placeholder="Search articles...">
+            <select id="categoryFilter">
+                <option value="">All categories</option>
+            </select>
+            <input id="tagFilter" type="text" placeholder="Filter by tags (comma separated)">
+        </section>
+
+        <section id="postsList" class="posts-list"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> TechBlog</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

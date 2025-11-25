@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLite • Discover Modern Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="ShopLite home — discover trending products, modern essentials and exclusive deals.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>ShopLite</span>
+            </div>
+            <nav class="header-actions">
+                <a class="cart" href="#" id="open-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Fresh Drop</p>
+                    <h1 class="hero-title">Elevate your everyday</h1>
+                    <p class="hero-desc">Minimal styles, maximal comfort. Discover curated essentials crafted to move with you.</p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="product.html">Shop Featured</a>
+                        <a class="btn ghost" href="#featured">Browse All</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-slider" id="hero-slider">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1600&auto=format&fit=crop" alt="Lifestyle 1" class="slide active">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1600&auto=format&fit=crop" alt="Lifestyle 2" class="slide">
+                        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=1600&auto=format&fit=crop" alt="Lifestyle 3" class="slide">
+                    </div>
+                    <div class="dots" id="hero-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section categories" id="categories">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Shop by category</h2>
+                </div>
+                <div class="category-grid">
+                    <a class="category-card reveal" data-filter="sneakers">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Sneakers">
+                        <span>Sneakers</span>
+                    </a>
+                    <a class="category-card reveal" data-filter="apparel">
+                        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop" alt="Apparel">
+                        <span>Apparel</span>
+                    </a>
+                    <a class="category-card reveal" data-filter="accessories">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop" alt="Accessories">
+                        <span>Accessories</span>
+                    </a>
+                    <a class="category-card reveal" data-filter="all">
+                        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop" alt="All">
+                        <span>All</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="section" id="featured">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Featured products</h2>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="search" type="search" placeholder="Search products...">
+                    </div>
+                </div>
+                <div id="product-grid" class="product-grid"></div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section newsletter">
+            <div class="container newsletter-inner">
+                <h3>Get 10% off your first order</h3>
+                <p>Sign up for updates on fresh drops and exclusive offers.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Your email" required>
+                    <button class="btn primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared cart drawer -->
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="icon-btn" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">₹0</strong>
+            </div>
+            <button class="btn primary full" id="checkout">Checkout</button>
+        </div>
+    </aside>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 ShopLite</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

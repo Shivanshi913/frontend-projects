@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write • Tech Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="noindex">
+</head>
+<body data-page="new">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="blog.html" class="logo">TechBlog</a>
+            <nav class="nav">
+                <a href="blog.html" class="nav-link">Home</a>
+                <a href="new.html" class="nav-link active">Write</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Write a new article</h1>
+        <form id="postForm" class="form">
+            <div class="field">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" required placeholder="Article title">
+            </div>
+            <div class="field">
+                <label for="category">Category</label>
+                <input id="category" name="category" type="text" list="categoryList" placeholder="e.g., Programming">
+                <datalist id="categoryList"></datalist>
+            </div>
+            <div class="field">
+                <label for="tags">Tags</label>
+                <input id="tags" name="tags" type="text" placeholder="Comma separated e.g., javascript, web">
+            </div>
+            <div class="field">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="12" required placeholder="Write your article..."></textarea>
+            </div>
+            <div class="actions">
+                <button class="btn" type="submit">Publish</button>
+                <a class="btn secondary" href="blog.html">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> TechBlog</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

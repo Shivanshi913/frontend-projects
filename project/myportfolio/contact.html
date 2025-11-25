@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact • My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <main style="padding-top: 100px;">
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+                <div class="contact-content" style="max-width: 800px;">
+                    <div class="contact-info" style="margin-bottom: 2.5rem;">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>shivanshi048@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+91 888766xxxx</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Lucknow, India</p>
+                        </div>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="https://github.com/Shivanshi913" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="" method="post" style="text-align: left;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label for="name" style="display:block; margin-bottom: 0.5rem; color:#1f2937; font-weight:600;">Name</label>
+                                <input id="name" name="name" type="text" required placeholder="Your name" style="width:100%; padding:0.75rem 1rem; border:1px solid #e5e7eb; border-radius:10px; outline:none;">
+                            </div>
+                            <div>
+                                <label for="email" style="display:block; margin-bottom: 0.5rem; color:#1f2937; font-weight:600;">Email</label>
+                                <input id="email" name="email" type="email" required placeholder="you@example.com" style="width:100%; padding:0.75rem 1rem; border:1px solid #e5e7eb; border-radius:10px; outline:none;">
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <label for="subject" style="display:block; margin-bottom: 0.5rem; color:#1f2937; font-weight:600;">Subject</label>
+                            <input id="subject" name="subject" type="text" placeholder="How can I help you?" style="width:100%; padding:0.75rem 1rem; border:1px solid #e5e7eb; border-radius:10px; outline:none;">
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <label for="message" style="display:block; margin-bottom: 0.5rem; color:#1f2937; font-weight:600;">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Write your message..." style="width:100%; padding:0.75rem 1rem; border:1px solid #e5e7eb; border-radius:10px; outline:none; resize: vertical;"></textarea>
+                        </div>
+                        <div style="margin-top: 1.25rem;">
+                            <button type="submit" class="btn btn-primary" style="cursor: pointer;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
