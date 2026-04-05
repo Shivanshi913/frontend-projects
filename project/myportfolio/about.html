@@ -3,64 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About • My Portfolio</title>
+    <meta name="description" content="About Shivanshi Tripathi — education at MUIT, IBM AI Engineering certificate, experience at Cogerphere AI Labs, skills and achievements.">
+    <meta name="theme-color" content="#070a12">
+    <title>About · Shivanshi Tripathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="home.html">Portfolio</a>
+                <a href="index.html"><span class="logo-mark" aria-hidden="true">ST</span> Shivanshi Tripathi</a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link active">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="project.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <main style="padding-top: 100px;">
-        <!-- About Section (Standalone Page) -->
+    <main class="page-main">
         <section class="about">
             <div class="container">
-                <h1 class="section-title" style="color:aliceblue">About Me</h1>
-                <div class="about-content">
-                    <div class="about-text">
-                        <img src="20241228.jpg" alt="Profile image" style="max-width: 220px; border-radius: 12px; margin-bottom: 1.5rem;">
+                <header class="section-header reveal">
+                    <p class="section-eyebrow">Background</p>
+                    <h1 class="section-title">About <span class="gradient-text">me</span></h1>
+                    <p class="section-lead">BCA student in AI &amp; computer science, IBM AI Engineering certified, with hands-on experience shipping backend services, LLM integrations, and research-aligned systems.</p>
+                </header>
+
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <img src="shivanshi photo 1.jpg" alt="Shivanshi Tripathi" width="280" height="280" loading="lazy">
                         <p>
-                            I am Shivanshi Tripathi, BCA student of Maharishi University of Information Technology.
-                            I am a dedicated student passionate about technology and innovation.
-                            My journey in computer science has been filled with exciting challenges
-                            and opportunities to grow both academically and personally.
+                            I am <strong>Shivanshi Tripathi</strong>, pursuing a <strong>Bachelor of Computer Applications (BCA) in AI &amp; Computer Science</strong> at
+                            Maharishi University of Information Technology (GPA <strong>8.5</strong>, 2024–2027). I hold the <strong>IBM AI Engineering Professional Certificate</strong> (machine learning, deep learning, and AI systems).
                         </p>
-                        <div class="skills">
-                            <h3>Skills</h3>
+                        <p>
+                            At <strong>Cogerphere AI Labs</strong> I worked as an <strong>AI Research Intern &amp; Backend Microservices Developer</strong> for six months—building Node.js/Express services, PostgreSQL and MongoDB data layers, real-time WebSockets, and AWS deployments with Prisma.
+                        </p>
+                        <div class="skills-block">
+                            <h3>Technical skills</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 0.75rem;">Aligned with my résumé</p>
                             <div class="skill-tags">
-                                <span class="skill-tag">HTML & CSS</span>
-                                <span class="skill-tag">Basic JavaScript</span>
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">Java</span>
-                                <span class="skill-tag">C</span>
-                                <span class="skill-tag">OOPs and DSA</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">React Native</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
                                 <span class="skill-tag">Git</span>
+                                <span class="skill-tag">WebSockets</span>
+                                <span class="skill-tag">Prisma</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">LLMs</span>
+                                <span class="skill-tag">Fine-tuning</span>
+                                <span class="skill-tag">AI systems design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <div class="about-card" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">Proficiency snapshot</h3>
+                            <div class="skill-bars">
+                                <div class="skill-row">
+                                    <div class="skill-row-header"><span>Backend (Node, Express, APIs)</span><span>Strong</span></div>
+                                    <div class="skill-track"><div class="skill-fill" data-w="90%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-row-header"><span>AI / LLMs &amp; pipelines</span><span>Strong</span></div>
+                                    <div class="skill-track"><div class="skill-fill" data-w="88%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-row-header"><span>Databases (PostgreSQL, MongoDB)</span><span>Strong</span></div>
+                                    <div class="skill-track"><div class="skill-fill" data-w="85%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-row-header"><span>React / React Native</span><span>Solid</span></div>
+                                    <div class="skill-track"><div class="skill-fill" data-w="78%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">Experience</h3>
+                            <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Cogerphere AI Labs — Lucknow, India</p>
+                            <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 0.75rem;">AI Research Intern &amp; Backend Microservices Developer · 6 months</p>
+                            <ul style="color: var(--text-muted); font-size: 0.95rem; padding-left: 1.2rem; line-height: 1.7;">
+                                <li>Backend microservices with Node.js, Express, and PostgreSQL for scalable AI-driven applications.</li>
+                                <li>AI pipelines with LLMs and fine-tuning for intelligent automation.</li>
+                                <li>Real-time systems using WebSockets; production deployments on AWS with Prisma ORM and MongoDB.</li>
+                                <li>Research on Context Intelligence Framework (CIF): architecture design and evaluation metrics.</li>
+                            </ul>
+                        </div>
+                        <div class="about-card" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">Achievements</h3>
+                            <ul style="color: var(--text-muted); font-size: 0.95rem; padding-left: 1.2rem; line-height: 1.7;">
+                                <li>Selected participant in <strong>Smart India Hackathon</strong> (AI-driven team solution).</li>
+                                <li>Active member of <strong>Lucknow DAO</strong> and <strong>Lucknow AI Labs</strong> — AI &amp; Web3 collaboration.</li>
+                            </ul>
+                        </div>
+                        <div class="about-card">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">Education &amp; credentials</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                                    <span>Maharishi University of Information Technology · AI &amp; Computer Science · GPA 8.5 · 2024–2027 · Lucknow</span>
+                                    <p>Undergraduate program combining core CS with artificial intelligence.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>IBM AI Engineering Professional Certificate</h4>
+                                    <span>Online · Completed</span>
+                                    <p>Machine learning, deep learning, and AI systems.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,15 +137,14 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Shivanshi Tripathi. <a href="https://github.com/Shivanshi913" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </div>
     </footer>
-
-    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-

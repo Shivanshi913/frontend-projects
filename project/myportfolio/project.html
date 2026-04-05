@@ -3,90 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects • My Portfolio</title>
+    <meta name="description" content="Projects by Shivanshi Tripathi — Clox, Research Tool for Academic Intelligence, CIF, and portfolio.">
+    <meta name="theme-color" content="#070a12">
+    <title>Projects · Shivanshi Tripathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="home.html">Portfolio</a>
+                <a href="index.html"><span class="logo-mark" aria-hidden="true">ST</span> Shivanshi Tripathi</a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="project.html" class="nav-link active">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Projects Section -->
-    <main style="padding-top: 100px;">
+    <main class="page-main">
         <section class="projects">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
+                <header class="section-header reveal">
+                    <p class="section-eyebrow">Selected work</p>
+                    <h1 class="section-title">Featured <span class="gradient-text">projects</span></h1>
+                    <p class="section-lead">Highlights from my résumé—AI, Web3, research tooling, and this portfolio. Code and demos on <a href="https://github.com/Shivanshi913" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">GitHub</a> where repositories are public.</p>
+                </header>
+
+                <div class="project-filters reveal" role="tablist" aria-label="Filter projects">
+                    <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button type="button" class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; ML</button>
+                    <button type="button" class="filter-btn" data-filter="research" role="tab" aria-selected="false">Research</button>
+                    <button type="button" class="filter-btn" data-filter="web3" role="tab" aria-selected="false">Web3</button>
+                    <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+                </div>
+
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-code"></i>
+                    <article class="project-card reveal" data-category="web3 ai">
+                        <div class="project-card-top">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-link"></i></div>
+                            <span class="project-year">Featured</span>
                         </div>
-                        <h3>Project 1</h3>
-                        <p>A website which includes my portfolio and my skills</p>
+                        <h3>Clox</h3>
+                        <p>
+                            AI-powered platform that turns natural language into production-ready smart contracts; automated security scanning and fail-safe architecture;
+                            multi-chain deployment across Ethereum, Polygon, and Base; intelligent prompt pipelines for secure blockchain code.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">AI</span>
+                            <span class="tech-pill">Smart contracts</span>
+                            <span class="tech-pill">Multi-chain</span>
+                            <span class="tech-pill">LLMs</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/Shivanshi913" class="project-link" target="_blank" rel="noopener noreferrer">Code on GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-mobile-alt"></i>
+                    </article>
+
+                    <article class="project-card reveal" data-category="research ai">
+                        <div class="project-card-top">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-flask"></i></div>
+                            <span class="project-year">Research</span>
                         </div>
-                        <h3>Project 2</h3>
-                        <p>blogging site which include tech suggestion and news.</p>
+                        <h3>Research Tool for Academic Intelligence</h3>
+                        <p>
+                            Tooling for researchers: paper structuring, referencing, and metric-based evaluation; AI layers for contextual understanding and automated knowledge extraction;
+                            thesis frameworks aligned with 4+ research papers and benchmark metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">AI</span>
+                            <span class="tech-pill">LLMs</span>
+                            <span class="tech-pill">Data systems</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/Shivanshi913" class="project-link" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-database"></i>
+                    </article>
+
+                    <article class="project-card reveal" data-category="research ai">
+                        <div class="project-card-top">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                            <span class="project-year">AI research</span>
                         </div>
-                        <h3>Project 3</h3>
-                        <p>guess the number game with the python language .</p>
+                        <h3>Context Intelligence Framework (CIF)</h3>
+                        <p>
+                            Advanced AI architecture for contextual intelligence and adaptive reasoning; evaluation strategies to improve on existing benchmarks;
+                            ongoing research toward next-generation intelligent systems (also contributed to at Cogerphere AI Labs).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">AI research</span>
+                            <span class="tech-pill">Evaluation</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/Shivanshi913" class="project-link" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="web">
+                        <div class="project-card-top">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-globe"></i></div>
+                            <span class="project-year">This site</span>
+                        </div>
+                        <h3>Developer portfolio</h3>
+                        <p>
+                            Multi-page portfolio: profile, skills from my résumé, projects, and contact. Responsive layout, scroll reveals, and a cohesive dark theme.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">HTML</span>
+                            <span class="tech-pill">CSS</span>
+                            <span class="tech-pill">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="index.html" class="project-link">Live site <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Shivanshi913" class="project-link" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Shivanshi Tripathi. <a href="https://github.com/Shivanshi913" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </div>
     </footer>
-
-    </body>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
 </html>

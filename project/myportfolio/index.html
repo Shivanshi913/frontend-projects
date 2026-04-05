@@ -3,175 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Shivanshi Tripathi — AI research intern, backend &amp; microservices developer. BCA (AI &amp; CS), IBM AI Engineering certified. Projects in LLMs, Web3, and intelligent systems.">
+    <meta name="theme-color" content="#070a12">
+    <title>Shivanshi Tripathi · AI &amp; Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="home.html">Portfolio</a>
+                <a href="index.html"><span class="logo-mark" aria-hidden="true">ST</span> Shivanshi Tripathi</a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="project.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Shivanshi Tripathi</span></h1>
-                <p class="hero-subtitle">Student at <span class="highlight">Maharishi University of Information Technnology</span></p>
-                <p class="hero-course">Course: <span class="highlight">Bachelor of Computer Application</span></p>
-                <p class="hero-section">Section: <span class="highlight">C</span></p>
+            <div class="hero-content reveal">
+                <p class="hero-eyebrow">Open to roles in AI, backend &amp; full-stack</p>
+                <h1 class="hero-title">Hi, I&apos;m <span class="gradient-text">Shivanshi Tripathi</span></h1>
+                <p class="hero-role" id="typed-role" data-phrases="AI research intern · Backend &amp; microservices|BCA (AI &amp; Computer Science) · GPA 8.5|Building LLM pipelines, Web3 tools &amp; intelligent systems" data-static="AI research intern · Backend &amp; microservices"></p>
+                <div class="hero-meta">
+                    <span><i class="fas fa-building" aria-hidden="true"></i> Cogerphere AI Labs — AI Research &amp; Backend</span>
+                    <span><i class="fas fa-graduation-cap" aria-hidden="true"></i> BCA (AI &amp; CS) · MUIT · 2024–2027</span>
+                    <span><i class="fas fa-location-dot" aria-hidden="true"></i> Lucknow, India</span>
+                </div>
                 <p class="hero-description">
-                    Passionate about technology and eager to learn new skills. 
-                    Currently pursuing my degree and working on exciting projects.
+                    I design backend microservices with Node.js, Express, and PostgreSQL; integrate LLM pipelines and WebSockets;
+                    and ship production workloads on AWS. Recent work spans smart-contract tooling (Clox), academic research systems,
+                    and the Context Intelligence Framework (CIF). IBM AI Engineering certified.
                 </p>
                 <div class="hero-buttons">
-                    <a href="project.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    <a href="project.html" class="btn btn-primary"><i class="fas fa-folder-open" aria-hidden="true"></i> View projects</a>
+                    <a href="RESUME_SHIVANSHI_TRIPATHI.pdf" class="btn btn-secondary" download>Download résumé</a>
+                    <a href="https://github.com/Shivanshi913" class="btn btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                </div>
+                <div class="hero-social">
+                    <span class="hero-social-label">Connect</span>
+                    <div class="social-icon-row">
+                        <a href="https://github.com/Shivanshi913" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/shivanshi-tripathi" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="mailto:shivanshi048@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="tel:+918887661439" class="social-icon" aria-label="Phone"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">8.5</div>
+                        <div class="stat-label">GPA (BCA)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">6 mo</div>
+                        <div class="stat-label">AI internship</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3+</div>
+                        <div class="stat-label">Flagship projects</div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="20241228.jpg" alt="Profile image" style="max-width: 260px; border-radius: 50%;">
+            <div class="hero-visual reveal">
+                <div class="hero-image-wrap">
+                    <div class="hero-image-ring" aria-hidden="true"><div class="hero-image-ring-inner"></div></div>
+                    <div class="hero-image">
+                        <img src="shivanshi photo 1.jpg" alt="Shivanshi Tripathi — portrait" width="280" height="280">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <main style="padding-top: 100px;"> 
-<!-- About Section (Standalone Page) -->
-        <section class="about">
-            <div class="container">
-                <h1 class="section-title" style="color:aliceblue">About Me</h1>
-                <div class="about-content">
-                    <div class="about-text">
-                        <img src="20241228.jpg" alt="Profile image" style="max-width: 220px; border-radius: 12px; margin-bottom: 1.5rem;">
-                        <p>
-                            I am Shivanshi Tripathi, BCA student of Maharishi University of Information Technology.
-                            I am a dedicated student passionate about technology and innovation.
-                            My journey in computer science has been filled with exciting challenges
-                            and opportunities to grow both academically and personally.
-                        </p>
-                        <div class="skills">
-                            <h3>Skills</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML & CSS</span>
-                                <span class="skill-tag">Basic JavaScript</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">C</span>
-                                <span class="skill-tag">OOPs and DSA</span>
-                                <span class="skill-tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>    
-
-
-    
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Project 1</h3>
-                <p>A website which includes my portfolio and my skills</p>
-                <div class="project-links">
-                    <a href="#" class="project-link">View Project</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Project 2</h3>
-                <p>blogging site which include tech suggestion and news.</p>
-                <div class="project-links">
-                    <a href="#" class="project-link">View Project</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Project 3</h3>
-                <p>guess the number game with the python language .</p>
-                <div class="project-links">
-                    <a href="#" class="project-link">View Project</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="home-cta">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>shivanshi048@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+91 888766xxxx</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Lucknow, India</p>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Shivanshi913" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="cta-panel reveal">
+                <h2>Let&apos;s build something meaningful</h2>
+                <p>Hiring for AI, backend, or research engineering? I would love to hear from you.</p>
+                <a href="contact.html" class="btn btn-primary">Start a conversation</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Shivanshi Tripathi. <a href="https://github.com/Shivanshi913" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="mailto:shivanshi048@gmail.com">Email</a></p>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
